@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69DF505A-7B3E-43FC-9320-D1ED74CEBAC1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AzulBoardGame_PI</RootNamespace>
+    <AssemblyName>AzulBoardGame-PI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AzulServer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AzulServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Componentes\EfeitosTela.cs" />
+    <Compile Include="Componentes\Elementos.cs" />
+    <Compile Include="Componentes\MontarTabuleiro.cs" />
+    <Compile Include="Componentes\RealizarJogadas.cs" />
+    <Compile Include="Componentes\VerificarVez.cs" />
+    <Compile Include="Consultas\Centro.cs" />
+    <Compile Include="Consultas\Fabricas.cs" />
+    <Compile Include="Consultas\Jogador.cs" />
+    <Compile Include="Consultas\Partida.cs" />
+    <Compile Include="Forms\TelaConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaConfig.Designer.cs">
+      <DependentUpon>TelaConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaCreditos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaCreditos.Designer.cs">
+      <DependentUpon>TelaCreditos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaCriarPartida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaCriarPartida.Designer.cs">
+      <DependentUpon>TelaCriarPartida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaMenu.Designer.cs">
+      <DependentUpon>TelaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaTabuleiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaTabuleiro.Designer.cs">
+      <DependentUpon>TelaTabuleiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AzulejoCentro.cs" />
+    <Compile Include="Models\AzulejoFabrica.cs" />
+    <Compile Include="Models\Modelo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\TelaConfig.resx">
+      <DependentUpon>TelaConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaCreditos.resx">
+      <DependentUpon>TelaCreditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaCriarPartida.resx">
+      <DependentUpon>TelaCriarPartida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaMenu.resx">
+      <DependentUpon>TelaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaTabuleiro.resx">
+      <DependentUpon>TelaTabuleiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\madeira.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setinha.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azulejo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azulejo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azulejo3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azulejo4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azulejo5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundoWallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azulFabrica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azulejo0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,15 @@
+C:\Users\mgds2\Desktop\AzulBoardGame-PI\AzulBoardGame-PI\bin\Debug\AzulBoardGame-PI.exe.config
+C:\Users\mgds2\Desktop\AzulBoardGame-PI\AzulBoardGame-PI\bin\Debug\AzulBoardGame-PI.exe
+C:\Users\mgds2\Desktop\AzulBoardGame-PI\AzulBoardGame-PI\bin\Debug\AzulBoardGame-PI.pdb
+C:\Users\mgds2\Desktop\AzulBoardGame-PI\AzulBoardGame-PI\obj\Debug\AzulBoardGame_PI.TelaMenu.resources
+C:\Users\mgds2\Desktop\AzulBoardGame-PI\AzulBoardGame-PI\obj\Debug\AzulBoardGame_PI.Properties.Resources.resources
+C:\Users\mgds2\Desktop\AzulBoardGame-PI\AzulBoardGame-PI\obj\Debug\AzulBoardGame-PI.csproj.GenerateResource.cache
+C:\Users\mgds2\Desktop\AzulBoardGame-PI\AzulBoardGame-PI\obj\Debug\AzulBoardGame-PI.csproj.CoreCompileInputs.cache
+C:\Users\mgds2\Desktop\AzulBoardGame-PI\AzulBoardGame-PI\obj\Debug\AzulBoardGame-PI.exe
+C:\Users\mgds2\Desktop\AzulBoardGame-PI\AzulBoardGame-PI\obj\Debug\AzulBoardGame-PI.pdb
+C:\Users\mgds2\Desktop\AzulBoardGame-PI\AzulBoardGame-PI\obj\Debug\AzulBoardGame-PI.csproj.CopyComplete
+C:\Users\mgds2\Desktop\AzulBoardGame-PI\AzulBoardGame-PI\obj\Debug\AzulBoardGame_PI.Forms.TelaConfig.resources
+C:\Users\mgds2\Desktop\AzulBoardGame-PI\AzulBoardGame-PI\obj\Debug\AzulBoardGame_PI.Forms.TelaCriarPartida.resources
+C:\Users\mgds2\Desktop\AzulBoardGame-PI\AzulBoardGame-PI\obj\Debug\AzulBoardGame_PI.Forms.TelaTabuleiro.resources
+C:\Users\mgds2\Desktop\AzulBoardGame-PI\AzulBoardGame-PI\obj\Debug\AzulBoardGame_PI.Forms.TelaCreditos.resources
+C:\Users\mgds2\Desktop\AzulBoardGame-PI\AzulBoardGame-PI\obj\Debug\AzulBoardGame-PI.csprojAssemblyReference.cache
